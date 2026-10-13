@@ -23,6 +23,11 @@ In many teams, purchase requests travel by email and spreadsheet. Requests get l
 4. A condition routes the outcome. The flow writes Approved or Rejected, the approver's comment and the decision date back to SharePoint and emails the requester.
 5. The Power BI dashboard summarises the pipeline and spend.
 
+## Web dashboard
+`index.html` is a standalone dashboard of the same data (total requests, total spend, approval rate, average days to decision, status split, spend by vendor and category, and a request ledger with category filters).
+- **Live demo:** [add your GitHub Pages link here]
+- **Refresh:** export the SharePoint list with Export → Export to CSV, click **Refresh data** and choose the file. All figures recalculate in the browser. Nothing is uploaded anywhere.
+
 ## Business rules
 - Amount and Justification are required.
 - Status, approver comments and decision date are hidden on the new-request form and set only by the workflow.
@@ -35,6 +40,7 @@ In many teams, purchase requests travel by email and spreadsheet. Requests get l
 ## Screenshots
 - `screenshots/app.png` – Power Apps request screen
 - `screenshots/approval-email.png` – approval request in Outlook
+- `screenshots/rejection-email.png` – rejection email sent to the requester
 - `screenshots/flow.png` – Power Automate flow design and successful run
 - `screenshots/sharepoint-list.png` – updated SharePoint list
 - `screenshots/dashboard.png` – Power BI dashboard
